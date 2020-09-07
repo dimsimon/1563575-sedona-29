@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Димка Синегубов](https://up.htmlacademy.ru/htmlcss/29/user/1563575).
-* Наставник: {Захар Авсиевич}(https://htmlacademy.ru/profile/id846143).
+* Наставник: [Захар Авсиевич](https://htmlacademy.ru/profile/id846143).
 
 ---
 
