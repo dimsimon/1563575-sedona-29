@@ -1,0 +1,113 @@
+:root {
+  /*color text*/
+  --black: #000000;
+  --light-black: #333333;
+  --white: #FFFFFF;
+  --light-blue: #81B3D2;
+
+  /*background*/
+  --grey: #888888;
+  --light-grey: #EEEEEE;
+  --white: #FFFFFF;
+  --light-blue: #81B3D2;
+  --brown: #766357;
+}
+
+body{
+  font-family: "PT Sans", Arial, sans-serif;
+  background-color: var(--grey);
+  margin: 40px;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-transform: uppercase;
+
+}
+
+header {
+  color: var(--black);
+  background-color: var(--white);
+}
+
+
+main {
+  background-color: var(--white);
+
+}
+
+.logo {
+  text-align: center;
+}
+
+.site-nav a{
+  color: var(--black);
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.site-nav {
+  list-style: none;
+  text-align: center;
+}
+
+.sub-header h2 {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.sub-header {
+  text-align: center;
+}
+
+.sub-reason {
+  list-style: none;
+  text-align: center;
+}
+
+.sub-header p,
+.sub-reason p,
+.reason-3-5 p {
+  font-size: 14px;
+  line-height: 21px;
+  list-style: none;
+}
+
+.reason-1, .reason-2 {
+  background: var(--light-blue);
+  color: var(--white);
+  text-align: center;
+}
+
+.reason-3-5 {
+  background: var(--light-grey);
+  text-align: center;
+}
+
+.booking {
+  text-align: center;
+}
+
+footer {
+  background-color: var(--white);
+  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+}
+
+.contacts-phone {
+  color: var(--black);
+}
+
+.social-button {
+  list-style: none;
+}
+.footer-contacts {
+  text-align: center;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-csite-opy {
+  text-align: center;
+}
