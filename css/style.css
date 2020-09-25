@@ -1,25 +1,22 @@
 :root {
-  /*color text*/
   --black: #000000;
   --light-black: #333333;
   --white: #FFFFFF;
   --light-blue: #81B3D2;
   --light-brown: #766357;
-
-  /*background*/
   --grey: #888888;
   --light-grey: #EEEEEE;
-  --white: #FFFFFF;
-  --light-blue: #81B3D2;
-  --light-brown: #766357;
   --light-grey2: #F2F2F2;
   --blue: #669EC0;
   --dark-blue: #5496BD;
   --dark-brown: #503E33;
   --brown: #604E43;
+
+  --extra-white: rgba(255, 255, 255, 0.9);
+  --extra-grey: #E5E5E5;
 }
 
-body{
+.body{
   font-family: "PT Sans", Arial, sans-serif;
   background-color: var(--light-grey2);
   margin: 40px;
@@ -29,98 +26,99 @@ body{
   box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
   width: 1200px;
   text-align: center;
+  color: var(--black);
 }
 
-header {
-  color: var(--black);
+.header {
   background-color: var(--white);
 }
 
 .nav {
  height: 56px;
  display: flex;
- justify-content: center;
 }
 
-.site-nav a:hover {
+.nav__item {
+  list-style: none;
+}
+
+.nav__link:hover {
   color: var(--light-blue);
 }
-.site-nav a:active {
-  color: var(--black);
-  mix-blend-mode: normal;
+.nav__link:active {
   opacity: 0.3;
 }
 
-.site-nav a{
-  color: var(--black);
+.nav__link {
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
   text-decoration:none;
+  color: #000000;
 }
 
-.site-nav {
-  list-style: none;
-}
-
-main {
+.main {
   background-color: var(--white);
 }
 
-.sub-header h2 {
+.main__header .main__header--text {
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
 }
 
-.sub-reason {
+.section__list {
   list-style: none;
   display: flex;
 }
 
-.sub-header p,
-.sub-reason p,
-.reason-3-5 p {
+.main__header--paragraph,
+.section__list .list--text,
+.text--paragraph {
   font-size: 14px;
   line-height: 21px;
   list-style: none;
 }
 
-.reason-1, .reason-2 {
+.section__content {
   background: var(--light-blue);
   color: var(--white);
 }
 
-.reason-1 p, .reason-2 p, .reason-3-5 p{
+.contant__text {
   font-size: 14px;
   line-height: 21px;
 }
 
-.reason-3-5 {
+.box {
   background: var(--light-grey);
   display: flex;
   width:
 }
 
-h3 {
+.heading {
   font-size: 21px;
   line-height: 21px;
 }
 
-
-
-footer {
-  background-color: var(--white);
-  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+.footer {
+  display: flex;
+  background: var(--extra-white);
 }
 
-.contacts-phone {
+.footer__phone {
   color: var(--black);
 }
 
-.social-button {
+.footer__list {
   list-style: none;
+  display: flex;
 }
 
+/*Hotels.html*/
 
-
+.options .line {
+  background-color: var(--white);
+  border-top: 2px solid grey;
+  border-bottom: 2px solid grey;
+}

@@ -1,84 +1,91 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<title>Седона</title>
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet"  href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet"  href="css/style.css">
 </head>
 
-<body>
-<header>
+<body class="body">
+<header class="header">
 		<nav class="nav">
 			<ul>
-				<li class="site-nav"><a href="#">информация</a></li>
-				<li class="site-nav"><a href="#">фото и видео</a></li>
+				<li class="nav__item"><a class="nav__link" href="#">информация</a></li>
+				<li class="nav__item"><a class="nav__link" href="#">фото и видео</a></li>
 			</ul>
 			<div class="logo">
 				<img src="img/logo.svg" width="138px" height="70px" alt="Логотип Седона">
 			</div>
 			<ul>
-				<li class="site-nav"><a href="#">карта штата</a></li>
-				<li class="site-nav"><a href="hotels.html">гостиницы</a></li>
+				<li class="nav__item"><a class="nav__link" href="#">карта штата</a></li>
+				<li class="nav__item"><a class="nav__link" href="hotels.html">гостиницы</a></li>
 			</ul>
 		</nav>
 </header>
-<main class="content">
-		<section class="main-img">
+<main class="main">
+		<section class="main__img">
 			<h1>Добро пожаловать в Седону</h1>
  		</section>
 	<section>
-		<header class="sub-header">
-			<h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-				<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон! </p>
+		<header class="main__header">
+			<h2 class="main__header--text">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+				<p class="main__header--paragraph">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон! </p>
 		</header>
-		<section>
-			<div class="reason-1">
-				<h3>Настоящий городок</h3>
-				<p>— №1 —</p>
-				<p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
-
-				<img src="https://via.placeholder.com/150x100" alt="">
+		<section class="section">
+			<div class="section__content">
+			<div class="section__content--left">
+				<h3 class="heading">Настоящий городок</h3>
+				<p class="contant__text">— №1 —</p>
+				<p class="contant__text">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+				<img class="section__img--right" src="https://via.placeholder.com/150x100" alt="">
 			</div>
-				<ul class="sub-reason">
-					<li class="sub-reason"><h4>Жильё </h4>
-						<p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+			</div>
+				<ul class="section__list">
+					<li class="section__list">
+            			<h3 class="heading">Жильё </h3>
+						<p class="list--text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
 					</li>
-					<li class="sub-reason">
-						<h4>Еда </h4>
-						<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+					<li class="section__list">
+						<h3 class="heading">Еда </h3>
+						<p class="list--text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 					</li>
-					<li class="sub-reason">
-						<h4>Сувениры</h4>
-						<p>Не только китайского, но и местного производства! </p>
+					<li class="section__list">
+						<h3 class="heading">Сувениры</h3>
+						<p class="list--text">Не только китайского, но и местного производства! </p>
 					</li>
 				</ul>
 		</section>
-		<section class="reason-2">
-			<img src="https://via.placeholder.com/150x100" alt="">
-			<h3>Там есть Мост дьявола</h3>
-				<p> — №2 —</p>
-				 <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+		<section class="section">
+			<div class="section__content">
+			<img class="section__img--left" src="https://via.placeholder.com/150x100" alt="">
+			<div class="section__content--right">
+			<h3 class="heading">Там есть Мост дьявола</h3>
+				<p class="content__text"> — №2 —</p>
+				<p class="content__text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+			</div>
+			</div>
 		</section>
-		<div class="reason-3-5">
-			<section>
-			<h3>небольшая площадь</h3>
-				<p>— №3 —</p>
-				<p>все достопримечательности находятся очень близко</p>
+		<div class="box">
+			<section class="box__text">
+			<h3 class="text--subtitle class="heading"">небольшая площадь</h3>
+				<p class="text--paragraph">— №3 —</p>
+				<p class="text--paragraph">все достопримечательности находятся очень близко</p>
 			</section>
-			<section>
-			<h3>красивая дорога</h3>
-				<p>— №4 —</p>
-				<p>ехать в седону из лас-вегаса совсем не скучно!</p>
+			<section class="box__text">
+			<h3 class="text--subtitle class="heading"">красивая дорога</h3>
+				<p class="text--paragraph">—  №4 —</p>
+				<p class="text--paragraph">ехать в седону из лас-вегаса совсем не скучно!</p>
 			</section>
-			<section>
-			<h3>мало туристов</h3>
-				<p>— №5 —</p>
-				<p>большинство едет в гранд каньон и толпится там</p>
+			<section class="box__text">
+			<h3 class="text--subtitle class="heading"">мало туристов</h3>
+				<p class="text--paragraph">— №5 —</p>
+				<p class="text--paragraph">большинство едет в гранд каньон и толпится там</p>
 			</section>
 		</div>
 	</section>
-		<article class="booking">
+		<article class="article">
 			<h2>Заинтересовались?</h2>
 				<p>
 					Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
@@ -89,22 +96,22 @@
 			</div>
 		</article>
 </main>
-	<footer class="page-footer">
-		<section class="footer-contacts">
+	<footer class="footer">
+		<section class="footer__section">
 			<h2>Контакты</h2>
 			<p> #visitSEDONA<br>
-			 тел: <a class="contacts-phone" href="tel:+74956660166">+7(495)666-01-66</a>
+			 тел: <a class="footer__phone" href="tel:+74956660166">+7(495)666-01-66</a>
 			</p>
 		</section>
-		<section class="footer-social">
+		<section class="footer__social">
 			<h3>Социальные сети</h3>
-			<ul class="social-button">
-				<li><a href="#"><img src="https://via.placeholder.com/146x148">Твиттер</a></li>
-				<li><a href="#"><img src="https://via.placeholder.com/146x148">Фейсбук</a></li>
-				<li><a href="#"><img src="https://via.placeholder.com/146x148">Ютуб</a></li>
+			<ul class="footer__list">
+				<li><a class="footer__link" href="#"><img src="https://via.placeholder.com/146x148">Твиттер</a></li>
+				<li><a class="footer__link" href="#"><img src="https://via.placeholder.com/146x148">Фейсбук</a></li>
+				<li><a class="footer__link" href="#"><img src="https://via.placeholder.com/146x148">Ютуб</a></li>
 			</ul>
 		</section>
-		<p class="footer-csite-opy">
+		<p class="footer__author">
 			Website by
 			<a href="https://htmlacademy.ru/intensive/htmlcss">
 				<img src="img/logohtml.png" alt="Логотип">
