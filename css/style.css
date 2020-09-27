@@ -14,9 +14,10 @@
 
   --extra-white: rgba(255, 255, 255, 0.9);
   --extra-grey: #E5E5E5;
+  --transparent-white: rgba(255, 255, 255, 0.3);
 }
 
-.body{
+.Body{
   font-family: "PT Sans", Arial, sans-serif;
   background-color: var(--light-grey2);
   margin: 40px;
@@ -24,32 +25,30 @@
   margin-bottom: 0;
   text-transform: uppercase;
   box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
-  width: 1200px;
   text-align: center;
   color: var(--black);
 }
 
-.header {
+.Header {
   background-color: var(--white);
 }
 
-.nav {
- height: 56px;
+.Nav {
  display: flex;
 }
 
-.nav__item {
+.Nav__list-item {
   list-style: none;
 }
 
-.nav__link:hover {
+.Nav__link:hover {
   color: var(--light-blue);
 }
-.nav__link:active {
+.Nav__link:active {
   opacity: 0.3;
 }
 
-.nav__link {
+.Nav__link {
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
@@ -57,68 +56,134 @@
   color: #000000;
 }
 
-.main {
+.Main {
   background-color: var(--white);
 }
 
-.main__header .main__header--text {
+.MainContent__header {
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
 }
 
-.section__list {
+.MainContent__title {
+  font-size: 21px;
+}
+
+.MainElement__list, .MainElementBox {
   list-style: none;
   display: flex;
 }
 
-.main__header--paragraph,
-.section__list .list--text,
-.text--paragraph {
+.MainElement__text, .MainContent__text {
   font-size: 14px;
   line-height: 21px;
   list-style: none;
+  font-weight: 400;
 }
 
-.section__content {
+.MainElement__content {
   background: var(--light-blue);
   color: var(--white);
 }
 
-.contant__text {
-  font-size: 14px;
-  line-height: 21px;
-}
 
-.box {
+.MainElementBox {
   background: var(--light-grey);
   display: flex;
-  width:
 }
 
-.heading {
-  font-size: 21px;
-  line-height: 21px;
-}
-
-.footer {
+.Footer {
   display: flex;
   background: var(--extra-white);
 }
+.Contacts {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+}
 
-.footer__phone {
+.Contacts__phone {
   color: var(--black);
 }
 
-.footer__list {
+.Social__list {
   list-style: none;
   display: flex;
 }
 
 /*Hotels.html*/
 
-.options .line {
+.HotelsSort__text, .HotelsList__title {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.HotelsSort__title, .HotelsSort__list {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.HotelsList__item-type, 
+.HotelsList__button-link, 
+.HotelsList__item-price,
+.HotelsList__rating-value {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.Hotels {
   background-color: var(--white);
-  border-top: 2px solid grey;
-  border-bottom: 2px solid grey;
+}
+
+.HotelsSort {
+  display: flex;
+}
+
+.HotelsSort__list {
+  display: flex;
+  list-style: none;
+}
+
+.HotelsList {
+  list-style: none;
+}
+
+.HotelsList__item {
+  border-top: 2px solid var(--extra-grey);
+}
+
+.HotelsList__item--last {
+  border-bottom: 2px solid var(--extra-grey);
+}
+
+.HotelsList__info-link {
+  color: var(--black);
+}
+
+.ButtonDetails {
+  background-color: var(--light-blue);
+}
+.ButtonDetails:hover {
+  background-color: var(--blue);
+}
+.ButtonDetails:active {
+  background-color: var(--dark-blue);
+  color: var(--transparent-white);
+}
+
+.ButtonBook {
+  background-color: var(--light-brown);
+}
+.ButtonBook:hover {
+  background-color: var(--brown);
+}
+.ButtonBook:active {
+  background-color: var(--dark-brown);
+  color: var(--transparent-white);
+}
+
+.HotelsList__button-link {
+  color: var(--white);
+  text-decoration: none;
 }
