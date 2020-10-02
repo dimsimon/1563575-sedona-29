@@ -11,179 +11,207 @@
   --dark-blue: #5496BD;
   --dark-brown: #503E33;
   --brown: #604E43;
+  --middle-dark-grey: #666666;
 
   --extra-white: rgba(255, 255, 255, 0.9);
   --extra-grey: #E5E5E5;
   --transparent-white: rgba(255, 255, 255, 0.3);
 }
 
-.Body{
+.body{
   font-family: "PT Sans", Arial, sans-serif;
   background-color: var(--light-grey2);
-  margin: 40px;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0 40px;
   text-transform: uppercase;
   box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
   text-align: center;
   color: var(--black);
 }
 
-.Header {
+.hidden-text {
+  display: none;
+}
+
+.header {
   background-color: var(--white);
 }
 
-.Nav {
+.nav {
  display: flex;
 }
 
-.Nav__list-item {
+.nav__item {
   list-style: none;
 }
 
-.Nav__link:hover {
-  color: var(--light-blue);
-}
-.Nav__link:active {
-  opacity: 0.3;
-}
-
-.Nav__link {
+.nav__link {
   font-size: 14px;
-  line-height: 26px;
+  line-height: 1.85;
   font-weight: 700;
   text-decoration:none;
   color: #000000;
 }
 
-.Main {
+.nav__link:hover {
+  color: var(--light-blue);
+}
+.nav__link:active {
+  opacity: 0.3;
+}
+
+
+.main {
   background-color: var(--white);
 }
 
-.MainContent__header {
+.content__sub-header {
   font-size: 21px;
   font-weight: 700;
-  line-height: 26px;
+  line-height: 1.23;
 }
 
-.MainContent__title {
+.content__title {
   font-size: 21px;
 }
 
-.MainElement__list, .MainElementBox {
+.element__list, .element-box {
   list-style: none;
   display: flex;
 }
 
-.MainElement__text, .MainContent__text {
+.element__text, .content__text {
   font-size: 14px;
-  line-height: 21px;
+  line-height: 1.5;
   list-style: none;
   font-weight: 400;
 }
 
-.MainElement__content {
+.element__content {
   background: var(--light-blue);
   color: var(--white);
 }
 
 
-.MainElementBox {
+.element-box {
   background: var(--light-grey);
   display: flex;
 }
 
-.Footer {
+.footer {
   display: flex;
   background: var(--extra-white);
 }
-.Contacts {
+.contacts {
   font-size: 21px;
-  line-height: 21px;
+  line-height: 1.23;
   font-weight: 700;
 }
 
-.Contacts__phone {
+.contacts__phone {
   color: var(--black);
 }
 
-.Social__list {
+.social__list {
   list-style: none;
   display: flex;
 }
 
 /*Hotels.html*/
 
-.HotelsSort__text, .HotelsList__title {
+.sort__text, .hotels-list__title {
   font-size: 21px;
-  line-height: 26px;
+  line-height: 1.23;
 }
 
-.HotelsSort__title, .HotelsSort__list {
+.sort__title, .sort__list-item {
   font-size: 12px;
-  line-height: 18px;
+  line-height: 1.5;
 }
 
-.HotelsList__item-type, 
-.HotelsList__button-link, 
-.HotelsList__item-price,
-.HotelsList__rating-value {
+.hotels-list__item-type, 
+.hotels-list__item-price, 
+.hotels-list__button-link,
+.hotels-list__rating-value {
   font-size: 14px;
-  line-height: 21px;
+  line-height: 1.5;
 }
 
-.Hotels {
+.hotels {
   background-color: var(--white);
 }
 
-.HotelsSort {
-  display: flex;
+.sort__list {
+  list-style: none;
+  }
+
+.sort__link {
+  color: var(--black);
+  text-decoration: none;
+  }
+.sort__link:hover {
+  color: var(--light-blue);
+}
+.sort__link:active {
+  color: var(--black);
+  opacity: 0.3;
 }
 
-.HotelsSort__list {
-  display: flex;
+.hotels-list {
   list-style: none;
 }
 
-.HotelsList {
-  list-style: none;
+.hotels-list__title {
+  color: var(--black);
+}
+.hotels-list__title:hover {
+  color: var(--light-blue);
+}
+.hotels-list__title:active {
+  color: var(--black);
+  opacity: 0.3;
 }
 
-.HotelsList__item {
+.hotels-list__item {
   border-top: 2px solid var(--extra-grey);
 }
 
-.HotelsList__item--last {
+.hotels-list__item:last-child {
   border-bottom: 2px solid var(--extra-grey);
 }
 
-.HotelsList__info-link {
+.hotels-list__info-link {
   color: var(--black);
+  text-decoration: none;
 }
 
-.ButtonDetails {
+.button-details {
   background-color: var(--light-blue);
 }
-.ButtonDetails:hover {
+.button-details:hover {
   background-color: var(--blue);
 }
-.ButtonDetails:active {
+.button-details:active {
   background-color: var(--dark-blue);
   color: var(--transparent-white);
 }
 
-.ButtonBook {
+.button-book {
   background-color: var(--light-brown);
 }
-.ButtonBook:hover {
+.button-book:hover {
   background-color: var(--brown);
 }
-.ButtonBook:active {
+.button-book:active {
   background-color: var(--dark-brown);
   color: var(--transparent-white);
 }
 
-.HotelsList__button-link {
+.hotels-list__button-link {
   color: var(--white);
   text-decoration: none;
+}
+
+.hotels-list__rating-value {
+  background-color: var(--light-grey2);
+  color: var(--middle-dark-grey);
 }
