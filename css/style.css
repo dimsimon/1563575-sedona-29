@@ -28,23 +28,27 @@
   color: var(--black);
 }
 
-.hidden-text {
-  display: none;
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .header {
   background-color: var(--white);
 }
 
-.nav {
+.header__nav {
  display: flex;
 }
 
-.nav__item {
+.header__item {
   list-style: none;
 }
 
-.nav__link {
+.header__link {
   font-size: 14px;
   line-height: 1.85;
   font-weight: 700;
@@ -52,86 +56,103 @@
   color: #000000;
 }
 
-.nav__link:hover {
+.header__link:hover {
   color: var(--light-blue);
 }
-.nav__link:active {
+.header__link:active {
   opacity: 0.3;
 }
-
 
 .main {
   background-color: var(--white);
 }
 
-.content__sub-header {
+.features__header {
   font-size: 21px;
   font-weight: 700;
   line-height: 1.23;
 }
 
-.content__title {
+.features__title {
   font-size: 21px;
+  line-height: 1.23;
 }
 
-.element__list, .element-box {
+.features__text {
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+.features__element-list {
   list-style: none;
   display: flex;
 }
 
-.element__text, .content__text {
+.features__text, .features__element-text, .features__row-text {
   font-size: 14px;
   line-height: 1.5;
   list-style: none;
   font-weight: 400;
 }
 
-.element__content {
+.features__element-title {
+  font-size: 21px;
+  line-height: 1;
+}
+
+.features__element_background_blue {
   background: var(--light-blue);
   color: var(--white);
 }
 
-
-.element-box {
+.features__row {
   background: var(--light-grey);
   display: flex;
+}
+
+.features__text_light-black {
+  color: var(--light-black);
 }
 
 .footer {
   display: flex;
   background: var(--extra-white);
 }
-.contacts {
+.footer__contacts {
   font-size: 21px;
   line-height: 1.23;
   font-weight: 700;
 }
 
-.contacts__phone {
+.footer__contacts-phone {
   color: var(--black);
+  text-decoration: none;
 }
 
-.social__list {
+.footer__list {
   list-style: none;
   display: flex;
 }
 
 /*Hotels.html*/
+.hotels__sort, .hotels__sort-list {
+  display: flex;
+}
 
-.sort__text, .hotels-list__title {
+.hotels__sort-text, .hotels__title {
   font-size: 21px;
   line-height: 1.23;
 }
 
-.sort__title, .sort__list-item {
+.hotels__sort-title, .hotels__sort-item {
   font-size: 12px;
   line-height: 1.5;
 }
 
-.hotels-list__item-type, 
-.hotels-list__item-price, 
-.hotels-list__button-link,
-.hotels-list__rating-value {
+.hotels__item-type, 
+.hotels__item-price, 
+.hotels__buttons,
+.hotels__rating-value {
   font-size: 14px;
   line-height: 1.5;
 }
@@ -140,78 +161,78 @@
   background-color: var(--white);
 }
 
-.sort__list {
+.hotels__sort-list {
   list-style: none;
   }
 
-.sort__link {
+.hotels__sort-link {
   color: var(--black);
   text-decoration: none;
   }
-.sort__link:hover {
+.hotels__sort-link:hover {
   color: var(--light-blue);
 }
-.sort__link:active {
+.hotels__sort-link:active {
   color: var(--black);
   opacity: 0.3;
 }
 
-.hotels-list {
+.hotels__list {
   list-style: none;
 }
 
-.hotels-list__title {
+.hotels__link {
   color: var(--black);
 }
-.hotels-list__title:hover {
+.hotels__link:hover {
   color: var(--light-blue);
 }
-.hotels-list__title:active {
+.hotels__link:active {
   color: var(--black);
   opacity: 0.3;
 }
 
-.hotels-list__item {
+.hotels__item {
   border-top: 2px solid var(--extra-grey);
 }
 
-.hotels-list__item:last-child {
+.hotels__item:last-child {
   border-bottom: 2px solid var(--extra-grey);
 }
 
-.hotels-list__info-link {
+.hotels__link {
   color: var(--black);
   text-decoration: none;
 }
 
-.button-details {
+.hotels__buttons-details {
   background-color: var(--light-blue);
 }
-.button-details:hover {
+.hotels__buttons-details:hover {
   background-color: var(--blue);
 }
-.button-details:active {
+.hotels__buttons-details:active {
   background-color: var(--dark-blue);
   color: var(--transparent-white);
 }
 
-.button-book {
+.hotels__buttons-book {
   background-color: var(--light-brown);
 }
-.button-book:hover {
+.hotels__buttons-book:hover {
   background-color: var(--brown);
 }
-.button-book:active {
+.hotels__buttons-book:active {
   background-color: var(--dark-brown);
   color: var(--transparent-white);
 }
 
-.hotels-list__button-link {
+.hotels__buttons {
   color: var(--white);
   text-decoration: none;
 }
 
-.hotels-list__rating-value {
+.hotels__rating-value {
   background-color: var(--light-grey2);
   color: var(--middle-dark-grey);
 }
