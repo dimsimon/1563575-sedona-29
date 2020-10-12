@@ -181,13 +181,13 @@
   list-style: none;
 }
 
-.hotels__link {
+.hotels__item-link {
   color: var(--black);
 }
-.hotels__link:hover {
+.hotels__item-link:hover {
   color: var(--light-blue);
 }
-.hotels__link:active {
+.hotels__item-link:active {
   color: var(--black);
   opacity: 0.3;
 }
@@ -200,39 +200,39 @@
   border-bottom: 2px solid var(--extra-grey);
 }
 
-.hotels__link {
+.hotels__item-link {
   color: var(--black);
   text-decoration: none;
 }
 
-.hotels__buttons-details {
+.hotels__item-details,
+.hotels__item-book {
+  color: var(--white);
+  text-decoration: none;
+}
+.hotels__item-details {
   background-color: var(--light-blue);
 }
-.hotels__buttons-details:hover {
+.hotels__item-details:hover {
   background-color: var(--blue);
 }
-.hotels__buttons-details:active {
+.hotels__item-details:active {
   background-color: var(--dark-blue);
   color: var(--transparent-white);
 }
 
-.hotels__buttons-book {
+.hotels__item-book {
   background-color: var(--light-brown);
 }
-.hotels__buttons-book:hover {
+.hotels__item-book:hover {
   background-color: var(--brown);
 }
-.hotels__buttons-book:active {
+.hotels__item-book:active {
   background-color: var(--dark-brown);
   color: var(--transparent-white);
 }
 
-.hotels__buttons {
-  color: var(--white);
-  text-decoration: none;
-}
-
-.hotels__rating-value {
+.hotels__item-value {
   background-color: var(--light-grey2);
   color: var(--middle-dark-grey);
 }
