@@ -28,6 +28,10 @@
 	<main class="main">
 		<section class="hero">
 			<h1 class="visually-hidden">Добро пожаловать в Седону</h1>
+			<img src="img/mountains.jpg" width="1200" height="509" alt="Пейзаж Седоны">
+			<img src="img/welcome.png" alt="Welcome">
+			<img src="img/to the gorgeous.png" alt="to the gorgeous">
+			<img src="img/sedona.png" alt="sedona">
 		</section>
 		<section class="features">
 			<header class="features__header">
@@ -41,18 +45,21 @@
 						<p class="features__element-text">— №1 —</p>
 						<p class="features__element-text">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
 					</div>
-					<img class="features__element features__element_img_right" src="https://via.placeholder.com/150x100" alt="">
+					<img class="features__element features__element_img_right" src="img/hotel.jpg" width="800" height="256" alt="домик в седоне">
 				</div>
 				<ul class="features__element-list">
 					<li class="features__element-item">
+						<embed src="img/home.svg" width="75" height="72">
 						<h3 class="features__element-title">Жильё </h3>
 						<p class="features__element-text features__text_light-black">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
 					</li>
 					<li class="features__element-item">
+						<embed src="img/burger.svg" width="75" height="70">
 						<h3 class="features__element-title">Еда </h3>
 						<p class="features__element-text features__text_light-black">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 					</li>
 					<li class="features__element-item">
+						<embed src="img/present.svg" width="64" height="77">
 						<h3 class="features__element-title">Сувениры</h3>
 						<p class="features__element-text features__text_light-black">Не только китайского, но и местного производства! </p>
 					</li>
@@ -60,7 +67,7 @@
 			</section>
 			<section class="features__element">
 				<div class="features__element features__element_background_blue">
-					<img class="features__element features__element_img_left" src="https://via.placeholder.com/150x100" alt="">
+					<img class="features__element features__element_img_left" src="img/bridge.jpg" width="800" height="256" alt="Мост дьявола">
 					<div class="features__element features__element_text_right">
 						<h3 class="features__element-title">Там есть Мост дьявола</h3>
 						<p class="features__element-text"> — №2 —</p>
@@ -107,12 +114,30 @@
 		<section class="footer__social">
 			<h3 class="visually-hidden">Социальные сети</h3>
 			<ul class="footer__list">
-				<li class="footer__item"><a class="footer__link" href="#"><img class="footer__img"
-							src="https://via.placeholder.com/146x148">Твиттер</a></li>
-				<li class="footer__item"><a class="footer__link" href="#"><img class="footer__img"
-							src="https://via.placeholder.com/146x148">Фейсбук</a></li>
-				<li class="footer__item"><a class="footer__link" href="#"><img class="footer__img"
-							src="https://via.placeholder.com/146x148">Ютуб</a></li>
+				<li class="footer__item">
+					<a class="footer__link" href="#">
+						<svg width="46" height="48" class="footer__icon">
+							<use xlink:href=#twitter>
+							</use>
+						</svg>
+					</a>
+				</li>
+				<li class="footer__item">
+					<a class="footer__link" href="#">
+						<svg width="46" height="48"  class="footer__icon">
+							<use xlink:href=#facebook>
+							</use>
+						</svg>
+					</a>
+				</li>
+				<li class="footer__item">
+					<a class="footer__link" href="#">
+						<svg width="46" height="48" class="footer__icon">
+							<use xlink:href=#youtube>
+							</use>
+						</svg>
+					</a>
+				</li>
 			</ul>
 		</section>
 		<p class="footer__author">
@@ -122,6 +147,19 @@
 			</a>
 		</p>
 	</footer>
+	<svg>
+		<symbol id="twitter" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path d="M10.95 1.14409C12.635 0.648089 13.934 1.41409 14.527 2.32309C15.2 2.09209 15.858 1.84209 16.538 1.61509C16.5249 2.30145 16.2117 2.94761 15.681 3.38309C16.366 3.55309 16.985 2.89209 16.985 2.89209C16.816 3.89209 15.979 4.68009 15.422 4.91609C15.191 11.6661 12.247 16.1331 5.34498 15.9981H4.89898C4.48898 15.9981 0.734977 15.5381 0.000976562 14.1111C2.27198 14.3071 3.89398 13.6891 4.69398 12.9341C3.73398 12.6341 2.01498 12.4571 1.71498 9.98409C2.06398 10.0901 2.27898 10.2121 2.90498 10.1031C1.70498 9.24709 0.373977 8.53009 0.447977 6.33009C0.732977 6.65809 1.51498 6.86609 1.78798 6.80209C1.08498 6.56109 -0.182023 3.44209 0.893977 1.85009C2.71198 3.70409 4.62898 5.45609 8.04598 5.62309C8.25398 3.33009 9.18298 1.79309 10.95 1.14409Z" fill="white"/>
+		</symbol>
+	
+		<symbol id="facebook" width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white"/>
+		</symbol>
+	
+		<symbol id="youtube" width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H17C18.65 0 20 1.35 20 3V13C20 14.65 18.65 16 17 16H3C1.35 16 0 14.65 0 13V3C0 1.35 1.35 0 3 0ZM6.027 4.002V11.998L15.014 8L6.027 4.002Z" fill="white"/>
+		</symbol>
+	</svg>
 </body>
 
 </html>

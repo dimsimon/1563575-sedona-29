@@ -134,6 +134,12 @@
   display: flex;
 }
 
+.footer__item {
+  background-color: var(--light-blue);
+  padding-top: 13px;
+  padding-left: 17px;
+}
+
 /*Hotels.html*/
 .hotels__sort, .hotels__sort-list {
   display: flex;
